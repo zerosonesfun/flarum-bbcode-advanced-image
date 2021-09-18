@@ -1,8 +1,8 @@
 {
-    "name": "username/flarum-ext-name",
-    "description": "A lovely description.",
+    "name": "zerosonesfun/flarum-bbcode-advanced-image",
+    "description": "An image BBCode which allows more attributes/parameters than the default img BBCode. Extra options include: width, unit (for width), and class.",
     "type": "flarum-extension",
-    "keywords": ["discussion", "template"],
+    "keywords": ["discussion", "BBCode", "images"],
     "license": "MIT",
     "authors": [
         {
@@ -12,8 +12,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/zerosonesfun/flarum-bbcode-template/issues",
-        "source": "https://github.com/zerosonesfun/flarum-bbcode-template",
+        "issues": "https://github.com/zerosonesfun/flarum-bbcode-advanced-image/issues",
+        "source": "https://github.com/zerosonesfun/flarum-bbcode-advanced-image",
         "forum": "https://discuss.flarum.org"
     },
     "homepage": "https://www.wilcosky.com",
@@ -28,15 +28,15 @@
     },
     "autoload": {
         "psr-4": {
-            "ZerosOnesFun\\ExtensionName\\": "src/"
+            "ZerosOnesFun\\AdvancedImage\\": "src/"
         }
     },
     "extra": {
         "flarum-extension": {
-            "title": "Title",
+            "title": "BBCode - Advanced Image",
             "category": "feature",
             "icon": {
-                "name": "fas fa-",
+                "name": "fas fa-image",
                 "backgroundColor": "#ddd",
                 "color": "#000"
             }
