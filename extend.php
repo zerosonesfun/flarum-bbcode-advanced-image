@@ -20,7 +20,7 @@ return [
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
                 '[image={URL} width={NUMBER?} unit={CHOICE=px,em,rem,%;optional} title={SIMPLETEXT1?} alt={SIMPLETEXT2?} class={SIMPLETEXT3?}]',
-                '<img src="{URL}" style="width:{NUMBER}{CHOICE};" class="SIMPLETEXT3" title="SIMPLETEXT1" alt="SIMPLETEXT2">'
+                '<img src="{URL}" style="width:{NUMBER}{CHOICE};" class="{SIMPLETEXT3}" title="{SIMPLETEXT1}" alt="{SIMPLETEXT2}">'
             );
         })
 ];
