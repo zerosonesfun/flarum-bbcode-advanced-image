@@ -6,7 +6,7 @@ The default image BBCode is `[img]` and so in order to not cause conflicts, this
 
 The code with all options (although, only the URL is required):
 
-`[image=example.com/image.png width=100% class=cool alt=This in image title=The title]`
+`[image=example.com/image.png width=100 unit=% class=cool alt=This in image title=The title]`
 
 Install using composer:
 `composer require zerosonesfun/flarum-bbcode-advanced-image:"*"`
