@@ -14,13 +14,13 @@ use s9e\TextFormatter\Configurator;
 return [
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
-            $document->head[] = '<link rel="stylesheet" type="text/css" href="/assets/extensions/YOURUSERNAME-nameofextension/styles.css">';
+            $document->head[] = '';
         }),
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
-                '[bbcode="{TEXT1}"]{TEXT2}[/bbcode]',
-                '<span class="{TEXT1}">{TEXT2}</span>'
+                '[image={URL} width={NUMBER?} unit={CHOICE=px,em,rem,%;optional} title={SIMPLETEXT1?} alt={SIMPLETEXT2?} class={SIMPLETEXT3?}]',
+                '<img src="{URL}" style="width:{NUMBER}{CHOICE};" class="SIMPLETEXT3" title="SIMPLETEXT1" alt="SIMPLETEXT2">'
             );
         })
 ];
